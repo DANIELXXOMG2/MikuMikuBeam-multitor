@@ -1,14 +1,9 @@
-version: "3.8"
-
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     ports:
       - "3000:3000"
-    volumes:
-      - .:/app
+    # --- AÑADE ESTAS LÍNEAS ---
     environment:
-      - NODE_ENV=development
-    command: npm run start
+      - NODE_ENV=production
+    command: node ./dist/index.js
