@@ -3,7 +3,20 @@ services:
     build: .
     ports:
       - "3000:3000"
-    # --- AÑADE ESTAS LÍNEAS ---
     environment:
       - NODE_ENV=production
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
     command: node ./dist/index.js
+    depends_on:
+      - multitor
+
+  multitor:
+    image: evait/multitor
+    ports:
+      - "9050-9059:9050-9059"
+    env_file:
+      - .env
+    restart: always
