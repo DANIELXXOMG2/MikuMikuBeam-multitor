@@ -1,4 +1,6 @@
-# Miku Miku Beam 💥⚡ (Network Stresser)
+# Miku Miku Beam 💥⚡ (Network Stresser) - Multitor Edition
+
+> **Note**: This is a fork of the original [Mikumikubeam](https://github.com/sammwyy/mikumikubeam) by sammwyy, integrated with [multitor](https://github.com/trimstray/multitor) to provide enhanced anonymization and proxy management capabilities.
 
 A fun and visually appealing stress testing server with a **Miku-themed** frontend, where you can configure and run attacks while enjoying a banger song in the background! 🎤✨
 
@@ -7,6 +9,7 @@ A fun and visually appealing stress testing server with a **Miku-themed** fronte
 ## Features 🎉
 
 - 🐳 **Docker Ready**: MMB is ready to be built and run in a Docker container.
+- 🧅 **Tor Integration**: Leverages `multitor` to route traffic through the Tor network, providing multiple exit nodes for enhanced anonymity.
 - 🌐 **Real-time Attack Visualization**: View your attack’s progress and statistics in real-time as it runs. 🔥
 - 🎶 **Miku-themed UI**: A cute and vibrant design with Miku’s vibe to make the process more fun. Includes a banger song to keep you pumped! 🎧
 - 🧑‍💻 **Configurable Attack Parameters**: Easily set the attack method, packet size, duration, and packet delay via the frontend interface.
@@ -45,7 +48,8 @@ Make sure you have the following installed:
    ```
 
 3. Create the necessary files:
-   - `data/proxies.txt` - List of proxies.
+   - `data/proxies.txt` - List of proxies (can be managed via the UI).
+   - `.env` - Environment variables for `multitor` configuration (e.g., `TOR_INSTANCES`).
    - `data/uas.txt` - List of user agents.
 
 4. Run the server in development mode:
@@ -113,9 +117,13 @@ Once the server is up and running, you can interact with it via the frontend:
 }
 ```
 
-## Adding Proxies and User-Agents
+## Managing Proxies, User-Agents, and Tor Instances
 
-Access to the ``data/proxies.txt`` and ``data/uas.txt`` can now be done fully in the frontend. Click the text button to the right of the beam button to open up the editor.
+- **Proxies and User-Agents**: Access to the `data/proxies.txt` and `data/uas.txt` can now be done fully in the frontend. Click the text button to the right of the beam button to open up the editor.
+- **Tor Instances**: You can manage the number of Tor instances by running the `tor-manager.sh` script:
+  ```bash
+  ./tor-manager.sh
+  ```
 
 ![AnnotatedImage](docs/annotated-button.png)
 
