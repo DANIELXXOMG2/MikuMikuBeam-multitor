@@ -1,6 +1,6 @@
 # Miku Miku Beam 💥⚡ (Network Stresser) - Multitor Edition
 
-> **Note**: This is a fork of the original [Mikumikubeam](https://github.com/sammwyy/mikumikubeam) by sammwyy, integrated with [multitor](https://github.com/trimstray/multitor) to provide enhanced anonymization and proxy management capabilities.
+> **Note**: This is a fork of the original [Mikumikubeam](https://github.com/sammwyy/mikumikubeam) by sammwyy, integrated with [multitor](https://github.com/trimstray/multitor) to provide enhanced anonymization and proxy management capabilities. This fork is maintained by [DANIELXXOMG2](https://github.com/DANIELXXOMG2).
 
 A fun and visually appealing stress testing server with a **Miku-themed** frontend, where you can configure and run attacks while enjoying a banger song in the background! 🎤✨
 
@@ -37,8 +37,8 @@ Make sure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/sammwyy/mikumikubeam.git
-   cd mikumikubeam
+   git clone https://github.com/DANIELXXOMG2/MikuMikuBeam.git
+   cd MikuMikuBeam
    ```
 
 2. Install the required dependencies:
