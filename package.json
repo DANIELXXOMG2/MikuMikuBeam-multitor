@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "packageManager": "bun@1.0.0",
+  "engines": {
+    "node": ">=20.18.1"
+  },
   "main": "./dist/index.js",
   "scripts": {
     "dev": "concurrently --ks SIGKILL -n \"Client,Server\" \"npm run dev:client\" \"npm run dev:server\"",
@@ -22,7 +26,6 @@
     "cheerio": "^1.0.0",
     "cross-env": "^7.0.3",
     "express": "^4.21.2",
-    "cross-env": "^7.0.3",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

@@ -29,8 +29,8 @@ A fun and visually appealing stress testing server with a **Miku-themed** fronte
 
 Make sure you have the following installed:
 
-- Node.js (v14 or above) 🌱
-- npm (Node Package Manager) 📦
+- Node.js (v20.18.1 or above) 🌱
+- npm (Node Package Manager) 📦 or bun
 
 ### Development Mode 🔧
 
@@ -46,6 +46,8 @@ Make sure you have the following installed:
    ```bash
    npm install
    ```
+
+   > **Note**: If you are having issues with `npm install` (e.g. `Killed` message), try using `bun install` instead. Bun is a faster and more memory-efficient package manager.
 
 3. Create the necessary files:
    - `data/proxies.txt` - List of proxies (can be managed via the UI).
