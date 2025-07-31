@@ -37,8 +37,8 @@ Make sure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/DANIELXXOMG2/MikuMikuBeam.git
-   cd MikuMikuBeam
+   git clone https://github.com/DANIELXXOMG2/MikuMikuBeam-multitor.git
+   cd MikuMikuBeam-multitor
    ```
 
 2. Install the required dependencies:
@@ -49,7 +49,7 @@ Make sure you have the following installed:
 
 3. Create the necessary files:
    - `data/proxies.txt` - List of proxies (can be managed via the UI).
-   - `.env` - Environment variables for `multitor` configuration (e.g., `TOR_INSTANCES`).
+   - `.env` - Environment variables for `multitor` configuration. You can copy the `.env.example` file to create it (e.g., `cp .env.example .env`).
    - `data/uas.txt` - List of user agents.
 
 4. Run the server in development mode:
@@ -68,8 +68,8 @@ Make sure you have the following installed:
 1. Clone the repository and navigate to the project directory:
 
    ```bash
-   git clone https://github.com/sammwyy/mikumikubeam.git
-   cd mikumikubeam
+   git clone https://github.com/DANIELXXOMG2/MikuMikuBeam-multitor.git
+   cd MikuMikuBeam-multitor
    ```
 
 2. Install the dependencies:
@@ -93,6 +93,20 @@ Make sure you have the following installed:
    In production mode, both the **frontend** and **backend** are served on the same port (`http://localhost:3000`).
 
 > Don't forget to add the necessary files `data/proxies.txt` and `data/uas.txt`.
+
+### Docker Mode 🐳
+
+This project is Docker-ready. You can build and run it using Docker Compose.
+
+1.  Make sure you have Docker and Docker Compose installed.
+2.  Create a `.env` file from the example (`cp .env.example .env`) and configure the `TOR_INSTANCES` if needed.
+3.  Run the following command to build and start the services:
+
+    ```bash
+    docker-compose up --build
+    ```
+
+4.  The application will be available at `http://localhost:3000`.
 
 ## Usage ⚙️
 
