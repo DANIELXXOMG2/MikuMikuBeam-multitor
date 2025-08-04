@@ -1,26 +1,237 @@
-# Ignore node_modules
-node_modules
+# =============================================================================
+# COMPREHENSIVE DOCKERIGNORE - SECURITY & PERFORMANCE OPTIMIZED
+# =============================================================================
 
-# Ignore build output
-dist
+# Version Control Systems
+.git
+.gitignore
+.gitattributes
+.gitmodules
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+.jenkins/
 
-# Ignore logs
+# Dependencies & Package Managers
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnpm-store/
+.yarn/
+.npm/
+.cache/
 
-# Ignore local env files
+# Build Outputs & Artifacts
+dist/
+build/
+out/
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Development Environment Files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+.envrc
+.environment
+secrets/
+config/local.*
 
-# Ignore IDE and editor files
-.idea
-.vscode
+# Logs & Debug Files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime & Temporary Files
+pids/
+lib-cov/
+coverage/
+.nyc_output/
+.grunt/
+bower_components/
+.lock-wscript/
+.tmp/
+.temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE & Editor Files
+.vscode/
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.code-workspace
+.project
+.classpath
+.settings/
+.metadata/
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Testing & Coverage
+test/
+tests/
+__tests__/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+coverage/
+.nyc_output/
+jest.config.*
+vitest.config.*
+.jest/
+
+# Documentation & Markdown
+*.md
+!README.md
+docs/
+doc/
+CHANGELOG*
+LICENSE*
+CONTRIBUTING*
+CODE_OF_CONDUCT*
+
+# Development Tools & Configuration
+Gruntfile.*
+gulpfile.*
+webpack.config.*
+vite.config.*
+rollup.config.*
+babel.config.*
+.babelrc*
+.eslintrc*
+.eslintignore
+.prettierrc*
+.prettierignore
+.stylelintrc*
+.editorconfig
+.browserslistrc
+tsconfig.*
+jsconfig.*
+postcss.config.*
+tailwind.config.*
+
+# Docker & Container Files
+Dockerfile*
+docker-compose*
+.dockerignore
+.docker/
+kubernetes/
+k8s/
+.helm/
+
+# CI/CD & Deployment
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+.jenkins/
+.azure-pipelines.yml
+vercel.json
+.vercel/
+.netlify/
+.firebase/
+.serverless/
+
+# Security & Secrets
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+credentials/
+.aws/
+.gcp/
+.azure/
+
+# Development Scripts
+scripts/dev/
+scripts/test/
+tor-manager.sh
+*.sh
+*.bat
+*.cmd
+*.ps1
+
+# Backup & Archive Files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# Large Media Files (if not needed in production)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+*.m4v
+*.3gp
+*.ogv
+
+# Development Data
+data/
+!data/.gitkeep
+sample-data/
+test-data/
+mock-data/
+
+# Miscellaneous
+.history/
+.vscode-test/
+.sass-cache/
+.connect.lock
+.coverage
+.grunt
+.lock-wscript
+.wafpickle-*
+.node_repl_history
+*.tsbuildinfo
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# =============================================================================
+# END OF DOCKERIGNORE
+# =============================================================================

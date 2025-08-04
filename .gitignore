@@ -1,78 +1,556 @@
-# Logs
-logs
+# =============================================================================
+# COMPREHENSIVE GITIGNORE - MULTI-LANGUAGE & FRAMEWORK SUPPORT
+# SECURITY & PERFORMANCE OPTIMIZED
+# =============================================================================
+
+# =============================================================================
+# SECURITY & CREDENTIALS - CRITICAL SECTION
+# =============================================================================
+
+# Environment Variables & Configuration
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+.envrc
+.environment
+config/local.*
+config/production.*
+config/staging.*
+config/development.*
+
+# Secrets & Credentials
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.gpg
+*.asc
+auth.json
+credentials.json
+service-account*.json
+.aws/
+.gcp/
+.azure/
+.ssh/
+
+# API Keys & Tokens
+api-keys.txt
+tokens.txt
+*.token
+*.secret
+
+# =============================================================================
+# NODE.JS & JAVASCRIPT ECOSYSTEM
+# =============================================================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+bun.lockb
+
+# Package Manager Files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnpm-store/
+.yarn/
+.npm/
+.cache/
+
+# Runtime & Process Files
+pids/
+*.pid
+*.seed
+*.pid.lock
+.lock-wscript
+
+# Coverage & Testing
+coverage/
+.nyc_output/
+.jest/
+test-results/
+junit.xml
+*.lcov
+
+# Build Outputs
+dist/
+build/
+out/
+*.local
+dist-ssr/
+.next/
+.nuxt/
+.vuepress/dist/
+.docusaurus/
+
+# Cache Directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# =============================================================================
+# LOGS & DEBUG FILES
+# =============================================================================
+
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+debug.log
+error.log
+access.log
+combined.log
 
-# Environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# =============================================================================
+# OPERATING SYSTEMS
+# =============================================================================
 
-# Dependencies
-node_modules
-
-# Build outputs
-dist
-dist-ssr
-build
-*.local
-
-# Cache directories
-.cache
-.parcel-cache
-.next
-.nuxt
-.vuepress/dist
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.swp
-*.swo
-*~
-
-# OS generated files
+# macOS
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
-Thumbs.db
+.AppleDouble
+.LSOverride
+Icon?
 
 # Windows
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
 
-# Temporary files
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# IDEs & EDITORS
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+Tags
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Atom
+.atom/
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.externalToolBuilders/
+*.launch
+.pydevproject
+.cproject
+.autotools
+.factorypath
+.buildpath
+.target
+.tern-project
+.texlipse
+.springBeans
+.recommenders/
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+.vs/
+
+# =============================================================================
+# PROGRAMMING LANGUAGES
+# =============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+.venv/
+venv/
+ENV/
+env/
+.env
+.python-version
+.pyenv
+pyvenv.cfg
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+.gradle/
+build/
+.gradletasknamecache
+.sts4-cache/
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# C/C++
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# C#
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+vendor/
+
+# Rust
+/target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# PHP
+vendor/
+composer.lock
+*.log
+.env
+.env.local
+.env.*.local
+
+# Ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+.bundle/
+vendor/bundle
+.byebug_history
+.ruby-version
+.ruby-gemset
+
+# =============================================================================
+# FRAMEWORKS & TOOLS
+# =============================================================================
+
+# React
+build/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Vue.js
+dist/
+
+# Angular
+dist/
+/tmp/
+/out-tsc/
+/bazel-out/
+node_modules/
+npm-debug.log
+yarn-error.log
+.angular/
+
+# Svelte
+/build/
+/functions/
+
+# Gatsby
+public/
+.cache/
+
+# Vite
+dist/
+dist-ssr/
+*.local
+
+# Webpack
+.webpack/
+
+# Rollup
+dist/
+
+# Parcel
+.cache/
+.parcel-cache/
+dist/
+
+# =============================================================================
+# DATABASES
+# =============================================================================
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+
+# MongoDB
+*.mongodb
+
+# Redis
+dump.rdb
+
+# =============================================================================
+# CLOUD & DEPLOYMENT
+# =============================================================================
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Firebase
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+
+# AWS
+.aws/
+.elasticbeanstalk/
+
+# Google Cloud
+.gcp/
+.google/
+
+# Azure
+.azure/
+
+# Heroku
+.heroku/
+
+# Docker
+.docker/
+
+# Kubernetes
+kubernetes/
+k8s/
+.helm/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# =============================================================================
+# TESTING & QUALITY ASSURANCE
+# =============================================================================
+
+# Test Results
+test-results/
+coverage/
+.nyc_output/
+junit.xml
+*.lcov
+.jest/
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# =============================================================================
+# DOCUMENTATION & STATIC SITES
+# =============================================================================
+
+# Generated Documentation
+docs/_build/
+docs/build/
+site/
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# =============================================================================
+# TEMPORARY & BACKUP FILES
+# =============================================================================
+
+# Temporary Files
 *.tmp
 *.temp
+*.swp
+*.swo
+*~
+.tmp/
+.temp/
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# Backup Files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
 
-# Coverage directory used by tools like istanbul
-coverage
-*.lcov
+# Archive Files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
 
-# Dependency directories
-jspm_packages/
+# =============================================================================
+# MISCELLANEOUS
+# =============================================================================
 
 # Optional npm cache directory
-.npm
+.npm/
 
 # Optional eslint cache
 .eslintcache
@@ -86,13 +564,45 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-# Deployment configurations
-.vercel
-.netlify
-.firebase
+# TypeScript cache
+*.tsbuildinfo
 
-# IDE and system files
-.vscode/settings.json
-.vscode/launch.json
-.vscode/tasks.json
-*.code-workspace
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test/
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+
+# Data directories (keep structure but ignore content)
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Local development scripts
+scripts/local/
+scripts/dev/
+scripts/test/
+
+# =============================================================================
+# END OF GITIGNORE
+# =============================================================================
