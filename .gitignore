@@ -85,3 +85,14 @@ jspm_packages/
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Deployment configurations
+.vercel
+.netlify
+.firebase
+
+# IDE and system files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+*.code-workspace
