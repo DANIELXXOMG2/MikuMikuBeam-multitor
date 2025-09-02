@@ -126,10 +126,10 @@ CONTRIBUTING*
 CODE_OF_CONDUCT*
 
 # Development Tools & Configuration
-Gruntfile.*
+# Gruntfile.*
 gulpfile.*
 webpack.config.*
-vite.config.*
+# vite.config.*
 rollup.config.*
 babel.config.*
 .babelrc*
@@ -140,10 +140,10 @@ babel.config.*
 .stylelintrc*
 .editorconfig
 .browserslistrc
-tsconfig.*
+# tsconfig.*
 jsconfig.*
-postcss.config.*
-tailwind.config.*
+# postcss.config.*
+# tailwind.config.*
 
 # Docker & Container Files
 Dockerfile*
