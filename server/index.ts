@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 import { Worker } from "worker_threads";
 
 import bodyParser from "body-parser";
-import { currentPath, loadProxies, loadUserAgents } from "./fileLoader";
+import { currentPath, ensureEnvFile, loadProxies, loadUserAgents } from "./fileLoader";
 import { AttackMethod } from "./lib";
 import { filterProxies } from "./proxyUtils";
 
@@ -23,6 +23,8 @@ const attackWorkers: { [key in AttackMethod]: string } = {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const __prod = process.env.NODE_ENV === "production";
+
+ensureEnvFile();
 
 const app = express();
 const httpServer = createServer(app);

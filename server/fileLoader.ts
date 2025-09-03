@@ -57,3 +57,17 @@ export function loadProxies(): Proxy[] {
 
   return [...torProxies, ...fileProxies];
 }
+
+export function ensureEnvFile() {
+  const envPath = join(currentPath(), ".env");
+  const envExamplePath = join(currentPath(), ".env.example");
+
+  if (fs.existsSync(envExamplePath) && !fs.existsSync(envPath)) {
+    try {
+      fs.copyFileSync(envExamplePath, envPath);
+      console.log("INFO: .env file not found. Created one from .env.example.");
+    } catch (err) {
+      console.error("ERROR: Could not create .env file from .env.example.", err);
+    }
+  }
+}
